@@ -1,0 +1,30 @@
+<div class="col-md-6 user-container">
+  <h2 style="margin: auto">Detalles de Contacto</h2>
+  <button class="btn btn-danger" style="width:100px" (click)="addUser()">Agregar Contacto</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Nombre</th>
+      <th>Telefono</th>
+      <th>Fecha de Nacimiento</th>
+      <th>Dirección</th>
+      <th>Correo Electronico</th>
+      <th>Edad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td class="hidden">{{user.id}}</td>
+      <td>{{user.nombre}}</td>
+      <td>{{user.telefono}}</td>
+      <td>{{user.fechanacimiento}}</td>
+      <td>{{user.direccion}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.edad}}</td>
+      <td><button class="btn btn-success" (click)="deleteUser(user)"> Borrar</button>
+        <button class="btn btn-success" (click)="editUser(user)" style="margin-left: 20px;"> Editar</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

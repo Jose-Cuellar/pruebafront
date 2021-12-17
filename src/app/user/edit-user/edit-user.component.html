@@ -1,0 +1,36 @@
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Actualizar Contactos</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" formControlName="nombre" placeholder="Nombre" name="nombre" class="form-control" id="nombre">
+    </div>
+
+    <div class="form-group">
+      <label for="telefono">Telefono:</label>
+      <input type="tel" formControlName="telefono" placeholder="Telefono" name="telefono" class="form-control" id="telefono">
+    </div>
+
+    <div class="form-group">
+      <label for="fechanacimiento">Fecha de Nacimiento:</label>
+      <input type="date" formControlName="fechanacimiento" placeholder="Fecha de Nacimiento" name="fechanacimiento" class="form-control" id="fechanacimiento">
+    </div>
+
+    <div class="form-group">
+      <label for="direccion">Dirección:</label>
+      <input formControlName="direccion" placeholder="Dirección" name="direccion" class="form-control" id="direccion">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Correo electronico:</label>
+      <input type="email" formControlName="email" placeholder="Correo Electronico" name="email" class="form-control" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="edad">Edad:</label>
+      <input type="number" formControlName="edad" placeholder="Edad" name="edad" class="form-control" id="edad">
+    </div>
+
+    <button class="btn btn-success">Actualizar</button>
+  </form>
+</div>
