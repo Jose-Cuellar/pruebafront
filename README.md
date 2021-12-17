@@ -1,0 +1,2 @@
+1.Se debe ingresar a iniciar la aplicación desde vsc o la terminal
+2.Se accede a "http://localhost:8080/users/", ahi se debe observar la informacón de los usuarios y los botones para realizar las acciones como crear, editar o eliminar contactos.
